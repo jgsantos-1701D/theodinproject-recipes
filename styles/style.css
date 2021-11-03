@@ -1,15 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* General Styles */
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  background-color: #F3FDED;
+  color: #36382E;
 }
 
 h1{
   text-align: center;
 }
+
+h2{
+  color: #344323;
+}
+
+a{
+  text-decoration: none;
+  color: #344323;
+}
+
+/* Index Page */
+
+
+
+/* Recipe Pages */
 
 figure{
   max-width: 100%;
