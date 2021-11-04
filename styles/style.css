@@ -7,34 +7,64 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  background-color: #F3FDED;
-  color: #36382E;
+  background-color: #f3fded;
+  color: #36382e;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-h2{
+h2 {
   color: #344323;
 }
 
-a{
+a {
   text-decoration: none;
   color: #344323;
 }
 
 /* Index Page */
 
-
-
 /* Recipe Pages */
 
-figure{
-  max-width: 100%;
+.recipe-main-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 300px 250px 1fr 1fr 1fr 100px;
+  gap: 10px 10px;
+  grid-template-areas:
+    'Header Header Header Header Header Header'
+    'Header Header Header Header Header Header'
+    'Description Description Description Description Description Description'
+    '. Ingredients Ingredients Steps Steps .'
+    '. Ingredients Ingredients Steps Steps .'
+    'Footer Footer Footer Footer Footer Footer';
 }
 
-img{
-  max-width: 90%;
-  margin: 20px auto;
+.recipe-header {
+  grid-area: Header;
+  justify-self: center;
+}
+
+.recipe-description {
+  grid-area: Description;
+  justify-self: center;
+}
+
+.recipe-ingredients {
+  grid-area: Ingredients;
+}
+
+.recipe-steps {
+  grid-area: Steps;
+}
+
+.recipe-footer {
+  grid-area: Footer;
+  padding: 100px;
+}
+
+img {
+  width: 1000px;
 }
