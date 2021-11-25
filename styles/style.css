@@ -26,6 +26,14 @@ a {
 
 /* Index Page */
 
+.index-main-grid {
+  width: 100vw;
+}
+
+.index-main-grid ul {
+  margin: 100px auto;
+}
+
 /* Recipe Pages */
 
 .recipe-main-grid {
