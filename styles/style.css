@@ -1,78 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 /* General Styles */
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f3fded;
-  color: #36382e;
+  font-family: 'KoHo', sans-serif;
+  background-color: #d3e4cd;
 }
 
-h1 {
+/* Title Section */
+
+#title {
+  height: 400px;
   text-align: center;
+  padding: 25px;
 }
 
-h2 {
-  color: #344323;
+.title-header {
+  font-size: 6rem;
+  font-family: 'Bebas Neue', cursive;
 }
 
-a {
-  text-decoration: none;
-  color: #344323;
+.title-image {
+  object-fit: cover;
 }
-
-/* Index Page */
-
-.index-main-grid {
-  width: 100vw;
-}
-
-.index-main-grid ul {
-  margin: 100px auto;
-}
-
-/* Recipe Pages */
-
-.recipe-main-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 300px 250px 1fr 1fr 1fr 100px;
-  gap: 10px 10px;
-  grid-template-areas:
-    'Header Header Header Header Header Header'
-    'Header Header Header Header Header Header'
-    'Description Description Description Description Description Description'
-    '. Ingredients Ingredients Steps Steps .'
-    '. Ingredients Ingredients Steps Steps .'
-    'Footer Footer Footer Footer Footer Footer';
-}
-
-.recipe-header {
-  grid-area: Header;
-  justify-self: center;
-}
-
-.recipe-description {
-  grid-area: Description;
-  justify-self: center;
-}
-
-.recipe-ingredients {
-  grid-area: Ingredients;
-}
-
-.recipe-steps {
-  grid-area: Steps;
-}
-
-.recipe-footer {
-  grid-area: Footer;
-  padding: 100px;
-}
-
-img {
-  width: 1000px;
-}
+/* Recipe Links Section */ ;
